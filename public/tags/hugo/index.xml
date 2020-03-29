@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Chesheer</title>
+    <link>https://chesheer.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Chesheer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>Copyleft - All rights are reserved for God</copyright>
+    <lastBuildDate>Wed, 12 Dec 2018 22:46:23 +0500</lastBuildDate>
+    
+	<atom:link href="https://chesheer.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Комментарии в Hugo</title>
+      <link>https://chesheer.github.io/post/comments-system/</link>
+      <pubDate>Wed, 12 Dec 2018 22:46:23 +0500</pubDate>
+      
+      <guid>https://chesheer.github.io/post/comments-system/</guid>
+      <description>&lt;p&gt;Не прошло и полгода. Я решил добавить в блог комментарии. Без них все выглядит как-то чересчур стерильно. Однако, поскольку блог крутится на Hugo, задача добавления динамического контента в статический сайт довольно непростая. Есть два очевидных варианта:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Disqus&lt;/li&gt;
+&lt;li&gt;Staticman&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Однако, если с ними познакомиться поближе, все окажется совсем неочевидно.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

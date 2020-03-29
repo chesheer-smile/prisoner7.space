@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+  <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.68.3" />
+
+    
+
+<title>Chesheer</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Chesheer"/>
+<meta name="twitter:description" content="Случайные заметки об Open Source, прочитанных книгах, просмотренных фильмах и продуманных мыслях"/>
+
+<meta property="og:title" content="Chesheer" />
+<meta property="og:description" content="Случайные заметки об Open Source, прочитанных книгах, просмотренных фильмах и продуманных мыслях" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://chesheer.github.io/" />
+<meta property="og:updated_time" content="2020-03-24T19:21:35+05:00" />
+
+
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="alternate" type="application/rss+xml" href="https://chesheer.github.io/index.xml" title="Chesheer" />
+
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://chesheer.github.io">Chesheer</a>
+      </span>
+      
+      
+      <p class="site__description">
+         Случайные заметки об Open Source, прочитанных книгах, просмотренных фильмах и продуманных мыслях 
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">Chesheer</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+  <div class="post-list">
+    
+    
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/post/changeaudiosink/" >Простенький скрипт для переключения вывода аудиосигнала</a>
+        </span>
+        <span class="item__date">
+          Mar 24, 2020
+        </span>
+        <span >
+        
+        <p>Благодаря волшебной утилите dmenu этот простенький скрипт предоставляет удобный интерфейс для быстрого переключения между разными интерфейсами вывода аудио. На лету он, к сожалению, работать не будет, и аудио нужно сначала поставить на паузу.
+Конечно, скрипт нужно допилить под себя, потому что в каждой системе будут свои id и интерфейсы вывода.
+Кроме того, вполне вероятно, что для того, чтобы менять интерфейсы из командной строки, потребуется поправить строку в файле /etc/pulse/default.pa на:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">load-module module-stream-restore restore_device<span style="color:#f92672">=</span>false</code></pre></div>
+<script type="application/javascript" src="https://gist.github.com/chesheer-smile/e0c0eec5a93325f26a07a03a272ca62c.js"></script>
+        
+        </span>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/post/silverblue-firefox-fix/" >Воспроизведение mp4-видео в Firefox на Fedora Silverblue</a>
+        </span>
+        <span class="item__date">
+          Nov 11, 2019
+        </span>
+        <span >
+        
+        <p>В Fedora Silverblue 31 Firefox идёт со всеми необходимыми кодеками, чтобы воспроизводить html5-видео, например, на Youtube, но mp4-видео вроде видео, встроенного на Reddit или Twitter, он из коробки не воспроизводит. Быстрый фикс:</p>
+<ol>
+<li>
+<p>Установка репозитория RPM Fusion:<br>
+<!-- raw HTML omitted -->
+sudo rpm-ostree install <a href="https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm">https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm</a> -E %fedora).noarch.rpm <a href="https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm">https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm</a> -E %fedora).noarch.rpm
+<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Перезагрузка</p>
+</li>
+<li>
+<p>Установка кодеков из RPM Fusion:<br>
+<!-- raw HTML omitted -->
+rpm-ostree install gstreamer1-libav gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free-extras gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-nonfree gstreamer1-plugins-good gstreamer1-plugins-ugly lame-libs lame-libs
+<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Перезагрузка.</p>
+</li>
+<li>
+<p>Вместо установки кучи кодеков можно просто установить VLC Player командой:<br>
+<!-- raw HTML omitted -->
+rpm-ostree install vlc
+<!-- raw HTML omitted --></p>
+</li>
+</ol>
+        
+        </span>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/post/comments-system/" >Комментарии в Hugo</a>
+        </span>
+        <span class="item__date">
+          Dec 12, 2018
+        </span>
+        <span >
+        
+        <p>Не прошло и полгода. Я решил добавить в блог комментарии. Без них все выглядит как-то чересчур стерильно. Однако, поскольку блог крутится на Hugo, задача добавления динамического контента в статический сайт довольно непростая. Есть два очевидных варианта:</p>
+<ol>
+<li>Disqus</li>
+<li>Staticman</li>
+</ol>
+<p>Однако, если с ними познакомиться поближе, все окажется совсем неочевидно.</p>
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/post/comments-system/">➦</a>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/post/linux-mint-timeshift/" >Linux Mint 19 и Timeshift</a>
+        </span>
+        <span class="item__date">
+          Jul 14, 2018
+        </span>
+        <span >
+        
+        <p>Некоторое время назад вышла очередная, девятнадцатая версия Linux Mint под красивым кодовым названием Tara. Одной из киллер-фич (по мнению создателей дистрибутива) является &ldquo;новшество&rdquo; под названием Timeshift. В сущности, это просто система создания снапшотов, которая работает либо через rsync (на любой файловой системе), либо через использование нативных снапшотов btrfs (соответственно, только на btrfs). Разработчики придают такое большое значение этой возможности, что даже вынесли ее настройку первым пунктом на экран приветствия при первой загрузке системы. Я решил распробовать эту новинку, и из этого получилась очень короткая и грустная история.</p>
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/post/linux-mint-timeshift/">➦</a>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/post/fedora-core-again/" >Назад к Fedora Core</a>
+        </span>
+        <span class="item__date">
+          Jun 25, 2018
+        </span>
+        <span >
+        
+        <figure>
+    <img src="https://fedoramagazine.org/wp-content/uploads/2018/06/fedora-coreos-816x345.jpg"/> 
+</figure>
+
+<p>На сайте проекта Fedora появилась занятная <a href="https://fedoramagazine.org/announcing-fedora-coreos/">новость</a> о том, что CoreOS присоединились к RedHat. Поскольку Fedora - это поле для экспериментов, на котором обкатываются решения для дальнейшей интеграции в родительский проект RHEL, это значит, что в скором будущем мы увидим новую разновидность Fedora, соединяющую наработки Fedora Atomic Host и Container Linux (так теперь называется CoreOS). А еще эта разновидность будет называться Fedora Core, что само по себе очень забавно - все вернулось на круги своя, и теперь у нас снова есть Fedora Core.</p>
+<p>Но, конечно, это совершенно иной продукт. Потыкать палкой пока не во что, но мне всегда хотелось познакомиться с CoreOS и с контейнерами. С нетерепением жду первых релизов.</p>
+        
+        </span>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/post/my-first-post/" >Пост для привлечения внимания</a>
+        </span>
+        <span class="item__date">
+          Jun 21, 2018
+        </span>
+        <span >
+        
+        <p>Этот блог задуман прежде всего для того, чтобы формулировать и осмысленно излагать некоторые мысли (редко, впрочем, имеющие большое значение) о разных интересующих меня вещах. Интересуют меня разные вещи, и Linux, технологии, литература - только некоторые из них. Многое усваивается лучше, только если изложить это письменно, как будто рассказываешь кому-то (кому не наплевать). Короче, это обычная днявочка.</p>
+<p>А еще это своего рода упражнение по изучению движка Hugo, сервиса Netlify и Gitlab, благодаря которым это все тут и работает. Статические сайты - отличная штука, если не иметь слишком высоких запросов. Как-нибудь распишу об этом подробнее. Ниже какая-то картинка (понятия не имею, что там будет):</p>
+<figure>
+    <img src="https://source.unsplash.com/random/500x500"/> 
+</figure>
+        
+        </span>
+        
+        </div>
+        
+     
+  </div>
+  
+
+
+        </div>
+        
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.68.3" />
+
+    
+    
+    
+
+<title>Комментарии в Hugo • Chesheer</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Комментарии в Hugo"/>
+<meta name="twitter:description" content="Не прошло и полгода. Я решил добавить в блог комментарии. Без них все выглядит как-то чересчур стерильно. Однако, поскольку блог крутится на Hugo, задача добавления динамического контента в статический сайт довольно непростая. Есть два очевидных варианта:
+
+Disqus
+Staticman
+
+Однако, если с ними познакомиться поближе, все окажется совсем неочевидно."/>
+
+<meta property="og:title" content="Комментарии в Hugo" />
+<meta property="og:description" content="Не прошло и полгода. Я решил добавить в блог комментарии. Без них все выглядит как-то чересчур стерильно. Однако, поскольку блог крутится на Hugo, задача добавления динамического контента в статический сайт довольно непростая. Есть два очевидных варианта:
+
+Disqus
+Staticman
+
+Однако, если с ними познакомиться поближе, все окажется совсем неочевидно." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chesheer.github.io/post/comments-system/" />
+<meta property="article:published_time" content="2018-12-12T22:46:23+05:00" />
+<meta property="article:modified_time" content="2018-12-12T22:46:23+05:00" />
+
+
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://chesheer.github.io">Chesheer</a>
+      </span>
+      
+      
+      <p class="site__description">
+         Случайные заметки об Open Source, прочитанных книгах, просмотренных фильмах и продуманных мыслях 
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">Chesheer</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Комментарии в Hugo</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Dec 12, 2018
+    
+    
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/hugo">hugo</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B8">комментарии</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 3 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <p>Не прошло и полгода. Я решил добавить в блог комментарии. Без них все выглядит как-то чересчур стерильно. Однако, поскольку блог крутится на Hugo, задача добавления динамического контента в статический сайт довольно непростая. Есть два очевидных варианта:</p>
+<ol>
+<li>Disqus</li>
+<li>Staticman</li>
+</ol>
+<p>Однако, если с ними познакомиться поближе, все окажется совсем неочевидно.</p>
+<h2 id="disqus">Disqus</h2>
+<p>Hugo  дружит с ним из коробки. Достаточно создать аккаунт, включить его поддержку в config-файле, и все заиграет. Что же даст мне Disqus?</p>
+<ul>
+<li>Удобную систему комментариев с ответами, уведомлениями, рейтингами и так далее.</li>
+<li>Возможность для пользователей использовать логины любых социальных сетей.</li>
+<li>Мощную панель управления сообществом.</li>
+<li>И даже возможность монетизировать свой блог!</li>
+</ul>
+<p>И это, конечно, не все.</p>
+<ul>
+<li><strong>РЕКЛАМА</strong>. Реклама прямо посреди комментариев (о да, я даже могу управлять, где она будет, в начале, посреди или в конце ленты комментариев).</li>
+<li><strong>СЛЕЖЕНИЕ</strong>. Disqus притащит в ваш уютный бложик такую орду трекеров всех мастей, что маленький Ghostery взвоет.</li>
+</ul>
+<p>Данные в обмен на удобство? Мне такую цену платить не хочется. И не только мне. Например:</p>
+<p><a href="https://chrislema.com/killed-disqus-commenting/">Why I killed Disqus Commenting on my site?</a></p>
+<p><a href="https://replyable.com/2017/03/disqus-is-your-data-worth-trading-for-convenience/">Disqus: Is Your Data Worth Trading for Convenience? </a></p>
+<p><a href="https://blog.dantup.com/2017/01/visiting-a-site-that-uses-disqus-comments-when-not-logged-in-sends-the-url-to-facebook/">Visiting a site that uses Disqus comments when not logged in sends the URL to Facebook</a></p>
+<p>Это просто случайная выборка с первой страницы ленивого поиска. Так что нет, спасибо, рассмотрим другой вариант.</p>
+<h2 id="staticman">Staticman</h2>
+<p><a href="https://staticman.net/">Staticman</a> специально создан для статичных сайтов.</p>
+<ul>
+<li>Не хранит ваши данные.</li>
+<li>Нет никакой рекламы.</li>
+<li>Нет слежения.</li>
+<li>Открытый исходный код.</li>
+</ul>
+<p>Для работы Staticman репозиторий с блогом должен лежать на Github. Его подключение к Gitlab возможно, но пока, к сожалению, связано со страшными самодельными костылями. Вы просто добавляете бот <!-- raw HTML omitted -->staticmanapp<!-- raw HTML omitted --> как Contributor, а затем делаете простой GET-запрос к его API, чтобы подтвердить приглашение, и все - он работает так, как вы хотите, и там, где вы хотите. Есть прекрасные туториалы по подкючению его к Hugo, например, <a href="https://gohugohq.com/howto/staticman-hugo-comment-system/">вот</a>.</p>
+<p>Есть только одна проблема. <strong>Он не работает.</strong> Его issues на Github забиты однотипными жалобами на невозможность подключить его как Contributor. Оказывается, дело связано <a href="https://github.com/eduardoboucas/staticman/issues/243">вот с чем</a>. Ввиду того, что Staticman работает как бот, для него действует стандартная квота на 5000 обращений к API в час. Видимо, он действительно популярен, так как эта квота сжирается практически моментально. Решение есть, и оно заключается в переработке его как приложения, которое можно просто установить себе в Github. Увы, пока с этим все туманно. Реакции разработчка на вскрытую проблему пока нет.</p>
+<p>Итак, очевидные варианты кончились, и я начал искать неочевидные.</p>
+<h2 id="неочевидное">Неочевидное</h2>
+<p>Моя альтернатива - <a href="https://commento.io/">Commento</a>.</p>
+<ul>
+<li>Необычайно простое подключение.</li>
+<li>Нет рекламы.</li>
+<li>Нет трекеров.</li>
+<li>Возможность логина через Facebook и Google.</li>
+<li>Открытый исходный код.</li>
+</ul>
+<p>К сожалению:</p>
+<ul>
+<li>Очень бедная панель управления.</li>
+<li>Сервис хранит данные (решается установкой на свой сервер).</li>
+</ul>
+<p>Комментарии выглядят вполне аккуратно и опрятно. Встроенный антиспам и включаемая предварительная модерация позволяют содержать комментарии в чистоте. Можно подключать свой CSS для ленты комментариев. В общем, мне понравилось. Сервис очевидно позиционирует себя как альтернатива прожорливому до пользовательских данных Disqus и заслуживает всяческого внимания. Ему ой как есть куда расти, и я надеюсь, что ему это удастся.</p>
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/post/linux-mint-timeshift/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Linux Mint 19 и Timeshift</span>
+    </a>
+    
+    
+    <a href="/post/silverblue-firefox-fix/" class="navigation-next">
+      <span class="navigation-tittle">Воспроизведение mp4-видео в Firefox на Fedora Silverblue</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+    
+
+
+
+    </body>
+</html>

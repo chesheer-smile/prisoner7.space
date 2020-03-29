@@ -1,0 +1,28 @@
+baseURL = "https://prisoner7.space"
+languageCode = "ru"
+DefaultContentLanguage = "ru"
+title = "Prisoner7"
+#theme = "beautifulhugo"
+theme = "hyde-hyde"
+#theme = "noteworthy"
+copyright = "Copyleft - All rights are reserved for God"
+
+[Params]
+homeTitle = "Заметки"
+subtitle = "Open source, фантазии, разное"
+author = 'prisoner7'
+description = 'Случайные заметки об Open Source, прочитанных книгах, просмотренных фильмах и продуманных мыслях'
+avatar = 'avatar.jpg'
+
+[[params.social]]
+
+
+[author]
+    name = ""
+    github = ""
+    gitlab = ""
+    linkedin = ""
+    facebook = ""
+    twitter = ""
+    instagram = ""
+

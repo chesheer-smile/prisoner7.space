@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fedora Core on Chesheer</title>
+    <link>https://chesheer.github.io/tags/fedora-core/</link>
+    <description>Recent content in Fedora Core on Chesheer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>Copyleft - All rights are reserved for God</copyright>
+    <lastBuildDate>Mon, 25 Jun 2018 15:21:06 +0500</lastBuildDate>
+    
+	<atom:link href="https://chesheer.github.io/tags/fedora-core/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Назад к Fedora Core</title>
+      <link>https://chesheer.github.io/post/fedora-core-again/</link>
+      <pubDate>Mon, 25 Jun 2018 15:21:06 +0500</pubDate>
+      
+      <guid>https://chesheer.github.io/post/fedora-core-again/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;https://fedoramagazine.org/wp-content/uploads/2018/06/fedora-coreos-816x345.jpg&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;На сайте проекта Fedora появилась занятная &lt;a href=&#34;https://fedoramagazine.org/announcing-fedora-coreos/&#34;&gt;новость&lt;/a&gt; о том, что CoreOS присоединились к RedHat. Поскольку Fedora - это поле для экспериментов, на котором обкатываются решения для дальнейшей интеграции в родительский проект RHEL, это значит, что в скором будущем мы увидим новую разновидность Fedora, соединяющую наработки Fedora Atomic Host и Container Linux (так теперь называется CoreOS). А еще эта разновидность будет называться Fedora Core, что само по себе очень забавно - все вернулось на круги своя, и теперь у нас снова есть Fedora Core.&lt;/p&gt;
+&lt;p&gt;Но, конечно, это совершенно иной продукт. Потыкать палкой пока не во что, но мне всегда хотелось познакомиться с CoreOS и с контейнерами. С нетерепением жду первых релизов.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

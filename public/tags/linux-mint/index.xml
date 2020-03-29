@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux Mint on Chesheer</title>
+    <link>https://chesheer.github.io/tags/linux-mint/</link>
+    <description>Recent content in Linux Mint on Chesheer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>Copyleft - All rights are reserved for God</copyright>
+    <lastBuildDate>Sat, 14 Jul 2018 13:20:14 +0500</lastBuildDate>
+    
+	<atom:link href="https://chesheer.github.io/tags/linux-mint/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux Mint 19 и Timeshift</title>
+      <link>https://chesheer.github.io/post/linux-mint-timeshift/</link>
+      <pubDate>Sat, 14 Jul 2018 13:20:14 +0500</pubDate>
+      
+      <guid>https://chesheer.github.io/post/linux-mint-timeshift/</guid>
+      <description>&lt;p&gt;Некоторое время назад вышла очередная, девятнадцатая версия Linux Mint под красивым кодовым названием Tara. Одной из киллер-фич (по мнению создателей дистрибутива) является &amp;ldquo;новшество&amp;rdquo; под названием Timeshift. В сущности, это просто система создания снапшотов, которая работает либо через rsync (на любой файловой системе), либо через использование нативных снапшотов btrfs (соответственно, только на btrfs). Разработчики придают такое большое значение этой возможности, что даже вынесли ее настройку первым пунктом на экран приветствия при первой загрузке системы. Я решил распробовать эту новинку, и из этого получилась очень короткая и грустная история.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
